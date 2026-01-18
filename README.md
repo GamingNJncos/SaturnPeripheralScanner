@@ -21,7 +21,7 @@ Note: If you have done any saturn region patching (also commonly pointed to 0x50
 
 Here's the table from the doc linked above 
 ** Peripheral Code Reference:**
-   A = Analog Controller (Mission Stick)
+A = Analog Controller (Mission Stick)
    C = Link Cable (Japan)
    D = DirectLink Cable (USA)
    E = Analog Controller (3D Multi-Controller)
