@@ -21,6 +21,7 @@ Note: If you have done any saturn region patching (also commonly pointed to 0x50
 
 Here's the table from the doc linked above 
 ** Peripheral Code Reference:**
+```
 A = Analog Controller (Mission Stick)
    C = Link Cable (Japan)
    D = DirectLink Cable (USA)
@@ -37,15 +38,55 @@ A = Analog Controller (Mission Stick)
    T = Multitap
    W = RAM Cartridge (1MB/4MB)
    X = X-Band/Netlink Modem
-
+```
 
 **Example output:**
+```
+cat GNJ_SaturnPeripheralScanner.txt
 
-Nights.bin      EJ
-Sonic 3D Blast.iso      JAE   <- Both Analog Controller Modes
-Shanghai (U).bin        JAMT  <-Analog + Mouse + Multitap
-Virtua Cop 2.bin        JMGE  <-Gun + Mouse
+# GNJ Saturn Peripheral Scanner v2.0.0
+# Author: GNJ Tools
+# Generated: 2026-01-18 16:14:34
+# Total files scanned: 127
+#
+# Peripheral Code Reference:
+#   A = Analog Controller
+#   C = Link Cable (JP)
+#   D = DirectLink (US)
+#   E = 3D Controller
+#   F = Floppy Drive
+#   G = Virtua Gun
+#   J = Control Pad
+#   K = Keyboard
+#   M = Mouse
+#   P = Video CD Card
+#   Q = Pachinko Controller
+#   R = ROM Cartridge
+#   S = Steering Controller
+#   T = Multitap
+#   W = RAM Cartridge
+#   X = NetLink Modem
+#
+# Format: Game_Title (0x60) | Version (0x2A) | Peripheral_Codes (0x50) | Supported Peripheral | Source Filename
+#===================================================================================================================================================================================
 
+Game_Title (0x60)                                  | Version  | Peripheral_Codes   | Supported Peripherals                                   | Source Filename
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+STREET FIGHTER COLLECTION                          | V1.000   | J                  | Control Pad                                             | Street Fighter Collection.iso
+VF. KIDS                                           | V0.001   | J                  | Control Pad                                             | Track No01.iso
+SEGA TOURING CARCHAMPIONSHIP                       | V1.003   | EJS                | 3D Controller, Control Pad, Steering Controller         | 01.iso
+STREET FIGHTER ZERO3                               | V1.002   | JW                 | Control Pad, RAM Cartridge                              | Street Fighter Zero 3.iso
+Shining Wisdom                                     | V1.000   | J                  | Control Pad                                             | Shining Wisdom.bin
+BOMBERMAN WARS                                     | V1.000   | J                  | Control Pad                                             | Bomberman Wars.iso
+DIE HARD ARCADE                                    | V1.002   | J                  | Control Pad                                             | Track No01.iso
+DAYTONA USA C.C.E. NET LINK EDITION                | V1.000   | JSEDX              | Control Pad, Steering Controller, 3D Controller, Dir... | DAYTONA_REMIX.bin
+METAL SLUG                                         | V1.002   | JW                 | Control Pad, RAM Cartridge                              | Metal Slug.iso
+LAYER SECTION                                      | V1.002   | J                  | Control Pad                                             | Layer Section.iso
+ELEVATOR ACTION RETURNS                            | V1.002   | J                  | Control Pad                                             | Elevator Action² Returns.bin
+SEGA RALLY CHAMPIONSHIP                            | V1.000   | JAS                | Control Pad, Analog Controller, Steering Controller     | Sega Rally.iso
+DARK SEED 2                                        | V1.004   | J                  | Control Pad                                             | DW-617-Sat-Dark_Seed_II(J).bin
+MARVEL SUPER HEROES VS. STREET FIGHTER             | V1.000   | JW                 | Control Pad, RAM Cartridge                              | s-MvSF.bin
+```
 
 
 
